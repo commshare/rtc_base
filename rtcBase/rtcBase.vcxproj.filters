@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{d7ff9309-6ef6-4362-9655-48d4342c1287}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\arraysize.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\asyncresolverinterface.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\asyncsocket.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\atomicops.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\basictypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\bind.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\byteorder.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\checks.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\constructormagic.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\criticalsection.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\event.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\ipaddress.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\location.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\logging.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\messagehandler.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\messagequeue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\nethelpers.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\nullsocketserver.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\platform_thread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\platform_thread_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\safe_compare.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\scoped_ref_ptr.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\sharedexclusivelock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\signalthread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\sigslot.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\socket.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\socketaddress.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\socketfactory.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\socketserver.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\stringencode.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\stringize_macros.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\stringutils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\thread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\thread_annotations.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\thread_checker.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\timeutils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\trace_event.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\typedefs.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win32.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\template_util.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\thread_checker_impl.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\event_tracer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\physicalsocketserver.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win32socketinit.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\winping.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\networkmonitor.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rtcBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\asyncresolverinterface.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\asyncsocket.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\checks.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\criticalsection.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\event.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\ipaddress.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\location.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\logging.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\messagehandler.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\messagequeue.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\nethelpers.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\nullsocketserver.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\platform_thread.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\sharedexclusivelock.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\signalthread.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\sigslot.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\socketaddress.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\stringencode.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\stringutils.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\thread.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\timeutils.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\win32.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\thread_checker_impl.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\event_tracer.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\physicalsocketserver.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\winping.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\networkmonitor.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\win32socketinit.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
