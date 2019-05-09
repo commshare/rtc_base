@@ -48,16 +48,30 @@ Strmiids.lib
 #include "base/bind.h"
 #include "base/location.h"
 #include <stdio.h>
+#include "base/task_queue.h"
 class Callback {
 public:
 	Callback() {}
 	~Callback() {}
-	void Print() {
+	int Print() {
 		rtc::Thread *thread = rtc::Thread::Current();
 		printf("callback %p\n", thread);
+		return 1000;
 	}
 };
+void Work()
+{
+	printf("thisis work!!!!\n");
+}
+//  // Ex: bool result = thread.Invoke<bool>(RTC_FROM_HERE,
+  // &MyFunctionReturningBool);
 int main() {
+
+	rtc::TaskQueue tq("zbtq");
+
+	tq.PostTask([]() { Work(); });
+
+
 	rtc::Thread worker;
 	rtc::Thread *thread = rtc::Thread::Current();
 	printf("main %p\n", thread);
@@ -65,11 +79,13 @@ int main() {
 	Callback test;
 	//在其它线程保证某方法被此线程调用，相当于消息的异步通知，即 POST
 	//invoke是怎么阻塞在哪里，直到回调函数被执行的。
-	worker.Invoke<void>(RTC_FROM_HERE, rtc::Bind(&Callback::Print, &test));
+	int ret = worker.Invoke<int>(RTC_FROM_HERE, rtc::Bind(&Callback::Print, &test));
 
-	printf("worker %p\n", &worker);
+	printf("worker %p and ret %d \n", &worker,ret);
 
 	worker.Stop();
+
+
 	return 0;
 }
 

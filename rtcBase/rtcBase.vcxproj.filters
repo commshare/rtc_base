@@ -159,6 +159,33 @@
     <ClInclude Include="..\base\networkmonitor.h">
       <Filter>base</Filter>
     </ClInclude>
+    <ClInclude Include="..\base\asyncinvoker.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\asyncinvoker-inl.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\callback.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\refcount.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\refcountedobject.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\scopedptrcollection.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win32socketserver.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\win32window.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\base\task_queue.h">
+      <Filter>base</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -249,6 +276,24 @@
       <Filter>base</Filter>
     </ClCompile>
     <ClCompile Include="..\base\win32socketinit.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="invoker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\asyncinvoker.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="invoker2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\win32socketserver.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\win32window.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\base\task_queue_win.cc">
       <Filter>base</Filter>
     </ClCompile>
   </ItemGroup>
